@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Updock&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="initials">HS</div>
+        <nav class="social-icons">
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/your-github-profile" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/your-instagram-profile" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gradient-background"></div>
+        <section class="content">
+            <div class="intro">
+                <h1 class="name">Harshit Singh</h1>
+                <h2 class="title">B-Tech CSE AI | Aspiring Full-Stack Developer</h2>
+                <p class="description">
+                    Computer science student pursuing my B-Tech with a keen interest in full-stack
+                    development, machine learning, cloud computing and automation. I enjoy exploring cutting-edge
+                    technologies and
+                    building innovative solutions. I'm actively seeking collaborative project opportunities and
+                    contributing to dynamic teams.
+                </p>
+            </div>
+            <div class="profile-image">
+                <img src="./images/profile.jpg" alt="Harshit Singh">
+            </div>
+        </section>
+
+        <section class="technologies">
+            <h2>Technologies</h2>
+            <div class="technologies-img">
+                <img class="tech-icon" src="./images/c-.png" alt="C++">
+                <img class="tech-icon" src="./images/python.png" alt="Python">
+                <img class="tech-icon" src="./images/mysql.png" alt="MySQL">
+                <img class="tech-icon" src="./images/html-5.png" alt="HTML5">
+                <img class="tech-icon" src="./images/css-3.png" alt="CSS3">
+                <img class="tech-icon" src="./images/js.png" alt="JavaScript">
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <img src="./images/project-1.jpg" alt="Portfolio Website">
+                <div class="details">
+                    <h3>Portfolio Website</h3>
+                    <p>A website for managing tasks and projects, with features such as task creation, assignment, and
+                        progress tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="./images/project-2.jpeg" alt="Calculator Website">
+                <div class="details">
+                    <h3>Calculator Website</h3>
+                    <p>Just a standard calculator working on a webpage using HTML, CSS, and JS.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="./images/project-3.jpg" alt="Coding Problem Solver">
+                <div class="details">
+                    <h3>Coding Problem Solver</h3>
+                    <p>Coding problem solution generator using Google's Generative AI with screenshot-based input for
+                        context-aware code generation with realistic typing patterns, including common mistakes and
+                        corrections.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PYAUTOGUI</span>
+                        <span class="tech-tag">PIL</span>
+                        <span class="tech-tag">GENAI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-me">
+            <div class="contact-me-left">
+                <h2>Get In Touch</h2>
+                <p>404, CV-Raman KIET Group of Institutions, Muradnagar,Ghaziabad UP, 201206</p>
+                <a href="tel:+919953354435">+91 995 335 4435</a><br>
+                <a href="mailto:Harshit.Patel01@outlook.in">Harshit.Patel01@outlook.in</a>
+            </div>
+            <div class="contact-me-right">
+                <h2>Write to Me</h2>
+                <div class="form">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                        <input type="hidden" name="access_key" value="da1e97ec-56ed-4696-be98-e8c64a77f744">
+                        <div class="data">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="message">
+                            <input id="message" name="message" placeholder="Your Message" required></input>
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="message-sent" style="display: none;">
+                    <p>Your message has been sent successfully!</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="Portfolio.js"></script>
+</body>
+
+</html>
