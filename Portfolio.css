@@ -126,30 +126,79 @@ main {
     height: auto;
 }
 
-
-.projects {
-    text-align: center;
-    margin: 3rem auto;
+.tech-tag {
+    background-color: #4b0082;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
 }
 
-.project-item img {
-    max-width: 100%;
-    height: auto;
+
+.projects {
+    max-width: 900px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    padding: 1rem;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #27303b;
+    transition: transform 0.3s ease;
+    animation: autoShowAnimation 0.3s both;
+}
+
+
+.project-img {
     display: block;
     margin: 0 auto;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.project-img img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
 }
 
 .project-tech {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    justify-content: center;
 }
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.project-item p {
+    color: #d0d0d0;
+    margin-bottom: 1rem;
+}
+
 
 .contact-me {
     text-align: center;
     margin-top: 3rem;
     display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 90%;
 }
 
 .contact-details {
@@ -196,17 +245,17 @@ main {
 }
 
 #contact-form button {
-    display: block;
-    width: 100%;
+    width: 50%;
     max-width: 300px;
     margin: 1rem auto;
     background-color: var(--primary-color);
-    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    height: min-content;
+    color: #fff;
 }
 
 #contact-form button:hover {
@@ -216,111 +265,10 @@ main {
 
 #message-sent {
     color: #61dafb;
-    margin-top: 1rem;
-}
-
-.projects {
-    text-align: center;
-    margin: 3rem auto;
-}
-
-.project-item:hover {
-    transform: translateY(-5px);
+    margin-top: 20px;
 }
 
 
-.project-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-
-}
-
-.project-item h3 {
-    color: #fff;
-    margin-bottom: 0.5rem;
-}
-
-.project-item p {
-    color: #d0d0d0;
-    margin-bottom: 1rem;
-}
-
-.project-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
-}
-
-.tech-tag {
-    background-color: #4b0082;
-    color: #fff;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-
-nav.social-icons {
-    margin-left: auto;
-}
-
-nav.social-icons a {
-    display: inline-block;
-    margin: 0 0.5rem;
-    color: var(--accent-color);
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-
-
-.projects {
-    max-width: 900px;
-    margin: 3rem auto;
-    text-align: center;
-}
-
-.project-item img {
-    max-width: 300px;
-    border-radius: 1rem;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-.project-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    text-align: left;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: #27303b;
-    transition: transform 0.3s ease;
-    animation: autoShowAnimation 0.3s both;
-    animation-timeline: view();
-}
-
-.projects {
-    max-width: 900px;
-    margin: 3rem auto;
-    text-align: center;
-}
-@media (min-width: 768px) {
-    .project-item {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-    }
-    .project-item img {
-        width: 300px;
-        margin-right: 2rem;
-        margin-bottom: 0;
-    }
-}
 .contact-me-left h2,
 p,
 a {
@@ -335,50 +283,9 @@ a {
     margin-bottom: 20px;
 }
 
-#contact-form input,
-#contact-form textarea {
-    display: flex;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #555;
-    background-color: #333;
-    color: #eee;
-    border-radius: 5px;
-}
-
 .data {
     display: flex;
     gap: 1rem;
-}
-
-#contact-form button {
-    display: flex;
-    height: min-content;
-    background-color: #7851a9;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#contact-form button:hover {
-    background-color: #916BBF;
-}
-
-#message-sent {
-    color: #61dafb;
-    margin-top: 20px;
-}
-
-.contact-me {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 90%;
 }
 
 .message {
@@ -390,4 +297,19 @@ a {
 
 .contact-me-right h2 {
     margin: 0.5rem;
+}
+
+@media screen and (max-width:768px) {
+    .contact-me {
+        flex-direction: column;
+    }
+
+    .project-item {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+
+    .content {
+        flex-direction: column;
+    }
 }
