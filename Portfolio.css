@@ -312,4 +312,7 @@ a {
     .content {
         flex-direction: column;
     }
+    .project-img img {
+        display: none;
+    }
 }
